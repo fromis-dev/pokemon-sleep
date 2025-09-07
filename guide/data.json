@@ -1,0 +1,100 @@
+{
+  "title": "포켓몬 슬립 리세마라",
+  "logo": "assets/logo.png",
+  "questions": [
+    {
+      "id": 1,
+      "text": "나무열매S 서브스킬이 10, 25레벨 내에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": 2 },
+        { "text": "아니오", "nextId": 3 }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "도우미보너스 서브스킬이 10, 25, 50레벨 내에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": "R1" },
+        { "text": "아니오", "nextId": 5 }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "나무열매S 서브스킬이 50레벨에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": 4 },
+        { "text": "아니오", "nextId": "R4" }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "도우미보너스 서브스킬이 10, 25, 50레벨 내에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": "R1" },
+        { "text": "아니오", "nextId": "R4" }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "도우미스피드M 서브스킬이 10, 25, 50레벨 내에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": 9 },
+        { "text": "아니오", "nextId": 6 }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "도우미스피드S 서브스킬이 10, 25, 50레벨 내에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": 7 },
+        { "text": "아니오", "nextId": 8 }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "도우미스피드M 서브스킬이 75, 100레벨에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": 8 },
+        { "text": "아니오", "nextId": 11 }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "도우미스피드 다운 성격인가?",
+      "answers": [
+        { "text": "예", "nextId": "R4" },
+        { "text": "아니오", "nextId": "R3" }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "도우미스피드 다운 성격인가?",
+      "answers": [
+        { "text": "예", "nextId": 10 },
+        { "text": "아니오", "nextId": "R1" }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "도우미스피드S 서브스킬이 10, 25, 50레벨 내에 있는가?",
+      "answers": [
+        { "text": "예", "nextId": "R2" },
+        { "text": "아니오", "nextId": "R3" }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "도우미스피드 다운 성격인가?",
+      "answers": [
+        { "text": "예", "nextId": "R3" },
+        { "text": "아니오", "nextId": "R2" }
+      ]
+    }
+  ],
+  "results": [
+    { "id": "R1", "text": "당장이륙" },
+    { "id": "R2", "text": "이륙" },
+    { "id": "R3", "text": "최소컷" },
+    { "id": "R4", "text": "이륙불가" }
+  ]
+}

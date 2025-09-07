@@ -1,0 +1,71 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;}
+
+#logo {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  margin: 20px 0;
+}
+
+#logo img {
+  max-width: 160px;
+  height: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #66a6ff;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.3s;
+}
+
+button:hover {
+  background: #4d8ef7;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
